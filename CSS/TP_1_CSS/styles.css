@@ -1,0 +1,267 @@
+/* =========================================
+   VARIABLES CSS
+========================================= */
+
+:root {
+    --color-fondo: #f4f6f8;
+    --color-texto: #2c3e50;
+    --color-acento: #3498db;
+}
+
+
+/* =========================================
+   ESTILOS GENERALES
+========================================= */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    margin: 0;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: var(--color-acento);
+    border-bottom: 2px solid var(--color-acento);
+    padding-bottom: 5px;
+}
+
+
+/* =========================================
+   2. SELECTORES
+========================================= */
+
+/* Selector por ID */
+#parrafo-id {
+    color: red;
+    font-weight: bold;
+}
+
+
+/* Selector por clase */
+.parrafo-clase {
+    color: green;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+
+/* Selector por etiqueta */
+p {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   3. MODIFICACIÓN DE TEXTO
+========================================= */
+
+.titulo-especial {
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px gray;
+}
+
+.texto-espaciado {
+    line-height: 2;
+    letter-spacing: 3px;
+}
+
+blockquote {
+    font-family: Georgia, "Times New Roman", serif;
+    font-style: italic;
+    background-color: #eeeeee;
+    border-left: 5px solid var(--color-acento);
+    padding: 15px;
+}
+
+
+/* =========================================
+   4. MODELO DE CAJA
+========================================= */
+
+.tarjeta-perfil {
+    width: 300px;
+    background-color: white;
+
+    border: 2px solid var(--color-acento);
+
+    padding: 20px;
+
+    margin: 30px auto;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    box-sizing: border-box;
+}
+
+
+.cuadrado-color {
+    width: 60px;
+    height: 60px;
+
+    background-color: var(--color-acento);
+
+    margin-bottom: 15px;
+
+    border-radius: 5px;
+}
+
+
+/*
+DIFERENCIA ENTRE BORDER-BOX Y CONTENT-BOX:
+
+content-box:
+El ancho y alto solamente se aplican al contenido.
+El padding y el border se agregan al tamaño total del elemento.
+
+border-box:
+El ancho y alto ya incluyen el contenido, padding y border.
+
+Por ejemplo, si un elemento tiene width: 300px con border-box,
+su tamaño total seguirá siendo de 300px.
+*/
+
+
+/* =========================================
+   5. DISPLAY
+========================================= */
+
+.tarjeta-galeria {
+    width: 120px;
+    height: 80px;
+
+    background-color: #d6ecf5;
+
+    border: 1px solid var(--color-acento);
+
+    padding: 10px;
+
+    margin: 5px;
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* DISPLAY BLOCK */
+
+.galeria-block .tarjeta-galeria {
+    display: block;
+}
+
+
+/* DISPLAY INLINE */
+
+.galeria-inline .tarjeta-galeria {
+    display: inline;
+}
+
+
+/*
+Al usar display: inline,
+el elemento deja de respetar completamente
+propiedades como width y height.
+*/
+
+
+/* DISPLAY INLINE-BLOCK */
+
+.galeria-inline-block .tarjeta-galeria {
+    display: inline-block;
+}
+
+
+/* =========================================
+   DISPLAY NONE Y VISIBILITY HIDDEN
+========================================= */
+
+.botones {
+    margin: 20px 0;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+}
+
+
+/* El elemento desaparece y deja de ocupar espacio */
+
+.boton-none {
+    display: none;
+}
+
+
+/* El elemento desaparece pero mantiene su espacio */
+
+.boton-hidden {
+    visibility: hidden;
+}
+
+
+.explicacion {
+    background-color: #eeeeee;
+    padding: 15px;
+    border-left: 5px solid var(--color-acento);
+}
+
+
+/* =========================================
+   6. VARIABLES CSS
+========================================= */
+
+.tarjeta-variables {
+
+    background-color: var(--color-fondo);
+
+    color: var(--color-texto);
+
+    border: 3px solid var(--color-acento);
+
+    padding: 20px;
+
+    width: 300px;
+
+    border-radius: 10px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}

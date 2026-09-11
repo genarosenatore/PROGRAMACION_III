@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico - Introducción a CSS</title>
+
+    <!-- Vinculación con el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Trabajo Práctico: Introducción a CSS</h1>
+        <p>Programación III</p>
+    </header>
+
+    <main>
+
+        <!-- 1. INTRODUCCIÓN A CSS -->
+        <section>
+            <h2>1. Introducción a CSS</h2>
+
+            <p>
+                CSS es un lenguaje que permite modificar la apariencia de una página web.
+                Sirve para cambiar colores, tamaños, fuentes, espacios y la distribución
+                de los elementos que forman parte de un documento HTML.
+            </p>
+        </section>
+
+
+        <!-- 2. SELECTORES -->
+        <section>
+            <h2>2. Selectores en CSS</h2>
+
+            <p id="parrafo-id">
+                Este párrafo utiliza un selector por ID.
+            </p>
+
+            <p class="parrafo-clase">
+                Este párrafo utiliza un selector por clase.
+            </p>
+
+            <p>
+                Este párrafo recibe estilos mediante un selector de etiqueta.
+            </p>
+        </section>
+
+
+        <!-- 3. MODIFICACIÓN DE TEXTO -->
+        <section>
+            <h2>3. Modificación de Texto</h2>
+
+            <h3 class="titulo-especial">
+                Título con sombra y mayúsculas
+            </h3>
+
+            <p class="texto-espaciado">
+                Este párrafo tiene un mayor espacio entre líneas y también entre
+                las letras para poder observar claramente el efecto producido
+                por las propiedades line-height y letter-spacing.
+            </p>
+
+            <blockquote>
+                "El diseño permite transformar una página simple en una experiencia
+                visual más agradable para el usuario."
+            </blockquote>
+        </section>
+
+
+        <!-- 4. MODELO DE CAJA -->
+        <section>
+            <h2>4. Modelo de Caja</h2>
+
+            <div class="tarjeta-perfil">
+
+                <div class="cuadrado-color"></div>
+
+                <h3>Tarjeta de Perfil</h3>
+
+                <p>
+                    Esta tarjeta utiliza border, padding, margin,
+                    background-color, border-radius y box-shadow.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- 5. DISPLAY Y VISIBILITY -->
+        <section>
+
+            <h2>5. Display y Visibility</h2>
+
+
+            <h3>Display: block</h3>
+
+            <div class="galeria-block">
+
+                <div class="tarjeta-galeria">
+                    Tarjeta 1
+                </div>
+
+                <div class="tarjeta-galeria">
+                    Tarjeta 2
+                </div>
+
+                <div class="tarjeta-galeria">
+                    Tarjeta 3
+                </div>
+
+            </div>
+
+
+            <h3>Display: inline</h3>
+
+            <div class="galeria-inline">
+
+                <div class="tarjeta-galeria">
+                    Tarjeta 1
+                </div>
+
+                <div class="tarjeta-galeria">
+                    Tarjeta 2
+                </div>
+
+                <div class="tarjeta-galeria">
+                    Tarjeta 3
+                </div>
+
+            </div>
+
+
+            <h3>Display: inline-block</h3>
+
+            <div class="galeria-inline-block">
+
+                <div class="tarjeta-galeria">
+                    Tarjeta 1
+                </div>
+
+                <div class="tarjeta-galeria">
+                    Tarjeta 2
+                </div>
+
+                <div class="tarjeta-galeria">
+                    Tarjeta 3
+                </div>
+
+            </div>
+
+
+            <h3>Display none y Visibility hidden</h3>
+
+            <div class="botones">
+
+                <button>Botón visible</button>
+
+                <button class="boton-none">
+                    Display none
+                </button>
+
+                <button>Botón visible</button>
+
+            </div>
+
+
+            <div class="botones">
+
+                <button>Botón visible</button>
+
+                <button class="boton-hidden">
+                    Visibility hidden
+                </button>
+
+                <button>Botón visible</button>
+
+            </div>
+
+
+            <p class="explicacion">
+                La diferencia es que display: none elimina completamente el elemento
+                de la página y no ocupa espacio. En cambio, visibility: hidden oculta
+                el elemento pero conserva el espacio que ocupaba.
+            </p>
+
+        </section>
+
+
+        <!-- 6. VARIABLES CSS -->
+        <section>
+
+            <h2>6. Variables CSS</h2>
+
+            <div class="tarjeta-variables">
+
+                <h3>Tarjeta con Variables CSS</h3>
+
+                <p>
+                    El fondo, el texto y el borde utilizan variables creadas
+                    dentro del selector :root.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Trabajo Práctico - Programación III</p>
+    </footer>
+
+</body>
+</html>

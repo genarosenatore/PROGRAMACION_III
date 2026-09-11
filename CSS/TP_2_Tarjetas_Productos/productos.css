@@ -1,0 +1,108 @@
+:root {
+    --color-fondo: #f4f4f4;
+    --color-tarjeta: #ffffff;
+    --color-texto: #333333;
+    --color-acento: #168aad;
+    --color-acento-hover: #126782;
+    --color-borde: #d8d8d8;
+    --color-imagen-1: #d9d9d9;
+    --color-imagen-2: #cfcfcf;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    color: var(--color-acento);
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+header p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contenedor-productos {
+    text-align: center;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 260px;
+    margin: 15px;
+    padding: 18px;
+    vertical-align: top;
+
+    background-color: var(--color-tarjeta);
+    border: 1px solid var(--color-borde);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
+    text-align: left;
+}
+
+.imagen-producto {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 18px;
+    border-radius: 8px;
+}
+
+.imagen-auriculares {
+    background-color: var(--color-imagen-1);
+}
+
+.imagen-teclado {
+    background-color: var(--color-imagen-2);
+}
+
+.tarjeta h2 {
+    margin: 0 0 12px 0;
+    color: var(--color-acento);
+    font-size: 19px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+.descripcion {
+    min-height: 48px;
+    margin-bottom: 18px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.boton-compra {
+    padding: 10px 20px;
+    background-color: var(--color-acento);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.boton-compra:hover {
+    background-color: var(--color-acento-hover);
+}
+
+footer {
+    margin-top: 30px;
+    font-size: 13px;
+}
