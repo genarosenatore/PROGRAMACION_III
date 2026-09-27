@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personajes de Los Simpsons</title>
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Personajes de Los Simpsons</h1>
+        <p>Explorá personajes de la serie, sus imágenes y algunas de sus frases.</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <button id="load-btn" type="button">Cargar Personajes</button>
+        </section>
+
+        <section id="loading" class="hidden" aria-live="polite">
+            <div class="spinner" aria-hidden="true"></div>
+            <p>Cargando personajes...</p>
+        </section>
+
+        <div id="error-message" class="hidden" role="alert"></div>
+
+        <section id="characters-container" aria-live="polite"></section>
+    </main>
+
+    <footer>
+        <p>
+            Documentación de la API:
+            <a href="https://thesimpsonsapi.com/" target="_blank" rel="noreferrer">
+                The Simpsons API
+            </a>
+        </p>
+    </footer>
+
+    <script type="module" src="./dist/main.js"></script>
+</body>
+</html>

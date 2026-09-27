@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 3 - Funciones y DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .destacado {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 id="titulo">Titulo original</h1>
+        <ul id="lista">
+            <li>Primer elemento</li>
+            <li>Segundo elemento</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Agregar elemento</h2>
+        <input id="texto-lista" type="text" placeholder="Escribi un elemento">
+        <button id="boton-agregar">Agregar</button>
+    </section>
+
+    <section>
+        <h2>Formulario</h2>
+        <form id="formulario">
+            <input id="dato-formulario" type="text" placeholder="Escribi un dato">
+            <button type="submit">Enviar</button>
+        </form>
+        <p id="respuesta-formulario"></p>
+    </section>
+
+    <section>
+        <h2>Eventos</h2>
+        <input id="input-enter" type="text" placeholder="Escribi y presiona Enter">
+
+        <select id="selector">
+            <option value="">Elegir opcion</option>
+            <option value="Rojo">Rojo</option>
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+        </select>
+
+        <p id="opcion-elegida"></p>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
